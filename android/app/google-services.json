@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "131925744771",
+    "project_id": "ai-productivity-super-ap-71736",
+    "storage_bucket": "ai-productivity-super-ap-71736.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131925744771:android:e3880e9a800eb97ac4cfb6",
+        "android_client_info": {
+          "package_name": "com.example.ai_productivity_super_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM6IEOsFlsvy68eUSxrRWY-iwVj4IPouI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

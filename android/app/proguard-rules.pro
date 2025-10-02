@@ -1,0 +1,3 @@
+-keep class com.example.ai_productivity_super_app.** { *; }
+-dontwarn com.example.ai_productivity_super_app.**
+-keepclassmembers class com.example.ai_productivity_super_app.** { *; }
