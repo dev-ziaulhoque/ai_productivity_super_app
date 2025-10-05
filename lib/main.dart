@@ -7,6 +7,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
+import 'feature/chat_bot/presentation/pages/chat_page.dart';
 import 'feature/notes/bloc/notes_bloc.dart';
 import 'feature/notes/data/datasources/notes_local_datasource.dart';
 import 'feature/notes/data/datasources/notes_remote_datasource.dart';
@@ -23,6 +24,7 @@ import 'package:ai_productivity_super_app/share/services/database_service.dart';
 import 'package:ai_productivity_super_app/share/services/ai_service.dart';
 import 'package:ai_productivity_super_app/share/services/notification_service.dart';
 
+import 'feature/tools/presentation/pages/tools_page.dart';
 import 'firebase_options.dart';
 
 
@@ -109,6 +111,8 @@ class _HomePageState extends State<HomePage> {
   static const List<Widget> _pages = <Widget>[
     NotesPage(),
     TasksPage(),
+    ChatPage(), // New
+    ToolsPage(), // Added Tools
   ];
 
   @override
@@ -119,6 +123,8 @@ class _HomePageState extends State<HomePage> {
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.note), label: 'Notes'),
           BottomNavigationBarItem(icon: Icon(Icons.task), label: 'Tasks'),
+          BottomNavigationBarItem(icon: Icon(Icons.chat), label: 'Chatbot'), // New
+          BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Tools'),
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.blue,

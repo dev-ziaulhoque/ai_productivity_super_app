@@ -1,13 +1,15 @@
+// Abstract Failure class
 abstract class Failure {
   final String message;
   Failure(this.message);
 }
 
+// ServerFailure class
 class ServerFailure extends Failure {
   ServerFailure([String message = 'Server failure']) : super(message);
 }
 
-class ServerException implements Exception {
-  final String message;
-  ServerException([this.message = 'Server error']);
+// ValidationFailure class
+class ValidationFailure extends Failure {
+  ValidationFailure([String message = 'Validation failed']) : super(message);
 }
